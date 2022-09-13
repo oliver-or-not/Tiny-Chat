@@ -75,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="jtv-2j-KLF">
-                                <rect key="frame" x="50" y="367" width="314" height="162"/>
+                                <rect key="frame" x="50" y="367.5" width="314" height="161"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SNy-AU-hI0">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="36"/>
@@ -83,16 +83,19 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yNp-Zq-BnZ">
-                                        <rect key="frame" x="0.0" y="60" width="314" height="36"/>
+                                        <rect key="frame" x="0.0" y="60" width="314" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym7-5g-PED">
-                                        <rect key="frame" x="0.0" y="120" width="314" height="42"/>
+                                        <rect key="frame" x="0.0" y="119" width="314" height="42"/>
                                         <color key="backgroundColor" red="0.8901960784313725" green="0.90980392156862744" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="LogInPressed:" destination="eWW-e8-iTO" eventType="touchUpInside" id="Fqq-Th-Rhn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -108,6 +111,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="xqF-iQ-VKV"/>
                     <connections>
+                        <outlet property="emailTextField" destination="SNy-AU-hI0" id="vZZ-zZ-1Lx"/>
+                        <outlet property="passwordTextField" destination="yNp-Zq-BnZ" id="k7w-XC-Xvb"/>
                         <segue destination="jtr-Co-kwM" kind="show" identifier="LogInToChat" id="P95-GV-GIX"/>
                     </connections>
                 </viewController>
@@ -124,7 +129,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="HYd-VQ-IAc">
-                                <rect key="frame" x="50" y="367" width="314" height="162"/>
+                                <rect key="frame" x="50" y="367.5" width="314" height="161"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82Q-Cg-o81">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="36"/>
@@ -132,16 +137,19 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5Q-wJ-qpJ">
-                                        <rect key="frame" x="0.0" y="60" width="314" height="36"/>
+                                        <rect key="frame" x="0.0" y="60" width="314" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVJ-Vt-o6z">
-                                        <rect key="frame" x="0.0" y="120" width="314" height="42"/>
+                                        <rect key="frame" x="0.0" y="119" width="314" height="42"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.90980392160000001" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Register"/>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="DY7-6Z-3C2" eventType="touchUpInside" id="3fT-Ci-4GK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -157,6 +165,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="rIe-yz-BaK"/>
                     <connections>
+                        <outlet property="emailTextField" destination="82Q-Cg-o81" id="Cpk-iM-hrS"/>
+                        <outlet property="passwordTextField" destination="c5Q-wJ-qpJ" id="hzF-wf-pfV"/>
                         <segue destination="jtr-Co-kwM" kind="show" identifier="RegisterToChat" id="A18-aJ-sxL"/>
                     </connections>
                 </viewController>
@@ -200,7 +210,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="A18-aJ-sxL"/>
+        <segue reference="P95-GV-GIX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
