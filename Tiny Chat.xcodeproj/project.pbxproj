@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		5750491828CF6B320008F11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750491728CF6B320008F11D /* AppDelegate.swift */; };
 		5750491A28CF6B320008F11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750491928CF6B320008F11D /* SceneDelegate.swift */; };
-		5750491C28CF6B320008F11D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750491B28CF6B320008F11D /* ViewController.swift */; };
+		5750491C28CF6B320008F11D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750491B28CF6B320008F11D /* WelcomeViewController.swift */; };
 		5750491F28CF6B320008F11D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5750491D28CF6B320008F11D /* Main.storyboard */; };
 		5750492228CF6B320008F11D /* Tiny_Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5750492028CF6B320008F11D /* Tiny_Chat.xcdatamodeld */; };
 		5750492428CF6B320008F11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5750492328CF6B320008F11D /* Assets.xcassets */; };
 		5750492728CF6B320008F11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5750492528CF6B320008F11D /* LaunchScreen.storyboard */; };
+		5750492F28D071B80008F11D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5750492E28D071B80008F11D /* GoogleService-Info.plist */; };
+		5750493228D0735E0008F11D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5750493128D0735E0008F11D /* FirebaseAnalytics */; };
+		5750493428D0735E0008F11D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5750493328D0735E0008F11D /* FirebaseAuth */; };
+		5750493B28D074B30008F11D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750493A28D074B30008F11D /* LogInViewController.swift */; };
+		5750493D28D074C80008F11D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750493C28D074C80008F11D /* RegisterViewController.swift */; };
+		5750493F28D074D80008F11D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750493E28D074D80008F11D /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5750491428CF6B320008F11D /* Tiny Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5750491728CF6B320008F11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5750491928CF6B320008F11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5750491B28CF6B320008F11D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5750491B28CF6B320008F11D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5750491E28CF6B320008F11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5750492128CF6B320008F11D /* Tiny_Chat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tiny_Chat.xcdatamodel; sourceTree = "<group>"; };
 		5750492328CF6B320008F11D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5750492628CF6B320008F11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5750492828CF6B320008F11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5750492E28D071B80008F11D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5750493A28D074B30008F11D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		5750493C28D074C80008F11D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5750493E28D074D80008F11D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5750493228D0735E0008F11D /* FirebaseAnalytics in Frameworks */,
+				5750493428D0735E0008F11D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,14 +72,42 @@
 			children = (
 				5750491728CF6B320008F11D /* AppDelegate.swift */,
 				5750491928CF6B320008F11D /* SceneDelegate.swift */,
-				5750491B28CF6B320008F11D /* ViewController.swift */,
-				5750491D28CF6B320008F11D /* Main.storyboard */,
+				5750493728D074800008F11D /* Model */,
+				5750493628D0747B0008F11D /* View */,
+				5750493528D074700008F11D /* Controller */,
 				5750492328CF6B320008F11D /* Assets.xcassets */,
-				5750492528CF6B320008F11D /* LaunchScreen.storyboard */,
 				5750492828CF6B320008F11D /* Info.plist */,
+				5750492E28D071B80008F11D /* GoogleService-Info.plist */,
 				5750492028CF6B320008F11D /* Tiny_Chat.xcdatamodeld */,
 			);
 			path = "Tiny Chat";
+			sourceTree = "<group>";
+		};
+		5750493528D074700008F11D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5750491B28CF6B320008F11D /* WelcomeViewController.swift */,
+				5750493A28D074B30008F11D /* LogInViewController.swift */,
+				5750493C28D074C80008F11D /* RegisterViewController.swift */,
+				5750493E28D074D80008F11D /* ChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5750493628D0747B0008F11D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5750491D28CF6B320008F11D /* Main.storyboard */,
+				5750492528CF6B320008F11D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5750493728D074800008F11D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +126,10 @@
 			dependencies = (
 			);
 			name = "Tiny Chat";
+			packageProductDependencies = (
+				5750493128D0735E0008F11D /* FirebaseAnalytics */,
+				5750493328D0735E0008F11D /* FirebaseAuth */,
+			);
 			productName = "Tiny Chat";
 			productReference = 5750491428CF6B320008F11D /* Tiny Chat.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +158,9 @@
 				Base,
 			);
 			mainGroup = 5750490B28CF6B320008F11D;
+			packageReferences = (
+				5750493028D0735E0008F11D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5750491528CF6B320008F11D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5750492728CF6B320008F11D /* LaunchScreen.storyboard in Resources */,
+				5750492F28D071B80008F11D /* GoogleService-Info.plist in Resources */,
 				5750492428CF6B320008F11D /* Assets.xcassets in Resources */,
 				5750491F28CF6B320008F11D /* Main.storyboard in Resources */,
 			);
@@ -141,9 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5750491C28CF6B320008F11D /* ViewController.swift in Sources */,
+				5750491C28CF6B320008F11D /* WelcomeViewController.swift in Sources */,
 				5750492228CF6B320008F11D /* Tiny_Chat.xcdatamodeld in Sources */,
 				5750491828CF6B320008F11D /* AppDelegate.swift in Sources */,
+				5750493F28D074D80008F11D /* ChatViewController.swift in Sources */,
+				5750493D28D074C80008F11D /* RegisterViewController.swift in Sources */,
+				5750493B28D074B30008F11D /* LogInViewController.swift in Sources */,
 				5750491A28CF6B320008F11D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +411,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5750493028D0735E0008F11D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5750493128D0735E0008F11D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5750493028D0735E0008F11D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5750493328D0735E0008F11D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5750493028D0735E0008F11D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5750492028CF6B320008F11D /* Tiny_Chat.xcdatamodeld */ = {

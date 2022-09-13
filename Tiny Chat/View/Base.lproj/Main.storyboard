@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iLG-lQ-eCR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Tiny_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="YA5-BO-cQG">
+                                <rect key="frame" x="50" y="243" width="314" height="410"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐣 Tiny Chat 🐣" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYN-11-zbD">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="280"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="oho-55-asn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo9-6N-cgy">
+                                        <rect key="frame" x="0.0" y="303" width="314" height="42"/>
+                                        <color key="backgroundColor" red="0.8901960784313725" green="0.90980392156862744" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <segue destination="eWW-e8-iTO" kind="show" identifier="WelcomeToLogIn" id="Dti-Zt-xDz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="142-Zg-tS2">
+                                        <rect key="frame" x="0.0" y="368" width="314" height="42"/>
+                                        <color key="backgroundColor" red="0.8901960784313725" green="0.90980392156862744" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Register"/>
+                                        <connections>
+                                            <segue destination="DY7-6Z-3C2" kind="show" identifier="WelcomeToRegister" id="z7d-Dv-dcN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aTJ-Nm-6kp"/>
+                        <color key="backgroundColor" red="0.9537856157911766" green="0.91954848341176476" blue="0.85770909930882344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YA5-BO-cQG" firstAttribute="centerX" secondItem="aTJ-Nm-6kp" secondAttribute="centerX" id="D3u-Gd-h5R"/>
+                            <constraint firstItem="aTJ-Nm-6kp" firstAttribute="trailing" secondItem="YA5-BO-cQG" secondAttribute="trailing" constant="50" id="DGV-nb-AgY"/>
+                            <constraint firstItem="YA5-BO-cQG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l0N-D9-n1G"/>
+                            <constraint firstItem="YA5-BO-cQG" firstAttribute="leading" secondItem="aTJ-Nm-6kp" secondAttribute="leading" constant="50" id="mPv-yN-5tA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tfF-8x-WiR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.14492753623199" y="97.767857142857139"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="Gkq-mS-qtW">
+            <objects>
+                <viewController id="eWW-e8-iTO" customClass="LogInViewController" customModule="Tiny_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2SS-hg-qrb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="jtv-2j-KLF">
+                                <rect key="frame" x="50" y="367" width="314" height="162"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SNy-AU-hI0">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yNp-Zq-BnZ">
+                                        <rect key="frame" x="0.0" y="60" width="314" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym7-5g-PED">
+                                        <rect key="frame" x="0.0" y="120" width="314" height="42"/>
+                                        <color key="backgroundColor" red="0.8901960784313725" green="0.90980392156862744" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Log In"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k7b-n0-Vmn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k7b-n0-Vmn" firstAttribute="trailing" secondItem="jtv-2j-KLF" secondAttribute="trailing" constant="50" id="1cG-4B-wpb"/>
+                            <constraint firstItem="jtv-2j-KLF" firstAttribute="centerY" secondItem="2SS-hg-qrb" secondAttribute="centerY" id="OGN-pL-YIo"/>
+                            <constraint firstItem="jtv-2j-KLF" firstAttribute="leading" secondItem="k7b-n0-Vmn" secondAttribute="leading" constant="50" id="PBt-2B-lZM"/>
+                            <constraint firstItem="jtv-2j-KLF" firstAttribute="centerX" secondItem="2SS-hg-qrb" secondAttribute="centerX" id="mMX-Ao-tsZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xqF-iQ-VKV"/>
+                    <connections>
+                        <segue destination="jtr-Co-kwM" kind="show" identifier="LogInToChat" id="P95-GV-GIX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAe-Hd-rl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2175.36231884058" y="-315.40178571428572"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="xJn-OW-bhA">
+            <objects>
+                <viewController id="DY7-6Z-3C2" customClass="RegisterViewController" customModule="Tiny_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sZB-wn-2D2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="HYd-VQ-IAc">
+                                <rect key="frame" x="50" y="367" width="314" height="162"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82Q-Cg-o81">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5Q-wJ-qpJ">
+                                        <rect key="frame" x="0.0" y="60" width="314" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVJ-Vt-o6z">
+                                        <rect key="frame" x="0.0" y="120" width="314" height="42"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.90980392160000001" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Register"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D1f-RM-fNr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HYd-VQ-IAc" firstAttribute="centerY" secondItem="sZB-wn-2D2" secondAttribute="centerY" id="Pgs-gm-sQm"/>
+                            <constraint firstItem="D1f-RM-fNr" firstAttribute="trailing" secondItem="HYd-VQ-IAc" secondAttribute="trailing" constant="50" id="Uu7-rw-k2C"/>
+                            <constraint firstItem="HYd-VQ-IAc" firstAttribute="centerX" secondItem="sZB-wn-2D2" secondAttribute="centerX" id="d06-y9-tG2"/>
+                            <constraint firstItem="HYd-VQ-IAc" firstAttribute="leading" secondItem="D1f-RM-fNr" secondAttribute="leading" constant="50" id="g5n-7L-3xR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rIe-yz-BaK"/>
+                    <connections>
+                        <segue destination="jtr-Co-kwM" kind="show" identifier="RegisterToChat" id="A18-aJ-sxL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOS-cR-uF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2175.36231884058" y="541.74107142857144"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="e7z-PU-qUE">
+            <objects>
+                <viewController id="jtr-Co-kwM" customClass="ChatViewController" customModule="Tiny_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k3U-hl-3dA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FpA-te-7Li"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kO1-t0-cq4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akY-Ri-DM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3415.9420289855075" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IIJ-qM-a6y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iLG-lQ-eCR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BEP-SN-img">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wUD-MI-O0h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWY-9B-csB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A18-aJ-sxL"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
