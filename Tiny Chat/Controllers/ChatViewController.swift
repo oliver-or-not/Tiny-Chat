@@ -27,7 +27,7 @@ class ChatViewController: UIViewController {
 		title = K.appName
 		navigationItem.hidesBackButton = true
 		
-//		tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: "ReusableCell")
+		tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: "ReusableCell")
 	}
 	
 	@IBAction func logOutPressed(_ sender: UIBarButtonItem) {

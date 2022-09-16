@@ -80,9 +80,9 @@
 			children = (
 				5750491728CF6B320008F11D /* AppDelegate.swift */,
 				5750491928CF6B320008F11D /* SceneDelegate.swift */,
-				5750493728D074800008F11D /* Model */,
-				5750493628D0747B0008F11D /* View */,
-				5750493528D074700008F11D /* Controller */,
+				5750493728D074800008F11D /* Models */,
+				5750493628D0747B0008F11D /* Views */,
+				5750493528D074700008F11D /* Controllers */,
 				5750492328CF6B320008F11D /* Assets.xcassets */,
 				5750492828CF6B320008F11D /* Info.plist */,
 				5750492E28D071B80008F11D /* GoogleService-Info.plist */,
@@ -92,7 +92,7 @@
 			path = "Tiny Chat";
 			sourceTree = "<group>";
 		};
-		5750493528D074700008F11D /* Controller */ = {
+		5750493528D074700008F11D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				5750491B28CF6B320008F11D /* WelcomeViewController.swift */,
@@ -100,10 +100,10 @@
 				5750493C28D074C80008F11D /* RegisterViewController.swift */,
 				5750493E28D074D80008F11D /* ChatViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		5750493628D0747B0008F11D /* View */ = {
+		5750493628D0747B0008F11D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5750491D28CF6B320008F11D /* Main.storyboard */,
@@ -111,15 +111,15 @@
 				5750494628D31EE40008F11D /* MessageCell.swift */,
 				5750494728D31EE40008F11D /* MessageCell.xib */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		5750493728D074800008F11D /* Model */ = {
+		5750493728D074800008F11D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5750494428D313310008F11D /* Message.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +358,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NM2S86642U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tiny Chat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -385,6 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NM2S86642U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tiny Chat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

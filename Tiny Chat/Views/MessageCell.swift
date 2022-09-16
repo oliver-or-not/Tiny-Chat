@@ -3,7 +3,7 @@
 //  Tiny Chat
 //
 //  Created by Wonil Lee on 2022/09/15.
-//
+// aaa
 
 import UIKit
 
@@ -11,6 +11,7 @@ class MessageCell: UITableViewCell {
 
 	@IBOutlet weak var messageBubble: UIView!
 	@IBOutlet weak var label: UILabel!
+	@IBOutlet weak var rightImageView: UIImageView!
 	
 	override func awakeFromNib() {
         super.awakeFromNib() 
