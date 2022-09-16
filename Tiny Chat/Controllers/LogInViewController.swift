@@ -16,6 +16,8 @@ class LogInViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		emailTextField.text = "1@2.com"
+		passwordTextField.text = "123456"
 		
 	}
 	
