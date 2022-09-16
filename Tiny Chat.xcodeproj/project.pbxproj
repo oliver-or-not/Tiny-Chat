@@ -20,6 +20,10 @@
 		5750493B28D074B30008F11D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750493A28D074B30008F11D /* LogInViewController.swift */; };
 		5750493D28D074C80008F11D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750493C28D074C80008F11D /* RegisterViewController.swift */; };
 		5750493F28D074D80008F11D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750493E28D074D80008F11D /* ChatViewController.swift */; };
+		5750494328D307EE0008F11D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750494228D307EE0008F11D /* Constants.swift */; };
+		5750494528D313310008F11D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750494428D313310008F11D /* Message.swift */; };
+		5750494828D31EE40008F11D /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750494628D31EE40008F11D /* MessageCell.swift */; };
+		5750494928D31EE40008F11D /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5750494728D31EE40008F11D /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		5750493A28D074B30008F11D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		5750493C28D074C80008F11D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5750493E28D074D80008F11D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5750494228D307EE0008F11D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5750494428D313310008F11D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5750494628D31EE40008F11D /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		5750494728D31EE40008F11D /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 				5750492828CF6B320008F11D /* Info.plist */,
 				5750492E28D071B80008F11D /* GoogleService-Info.plist */,
 				5750492028CF6B320008F11D /* Tiny_Chat.xcdatamodeld */,
+				5750494228D307EE0008F11D /* Constants.swift */,
 			);
 			path = "Tiny Chat";
 			sourceTree = "<group>";
@@ -99,6 +108,8 @@
 			children = (
 				5750491D28CF6B320008F11D /* Main.storyboard */,
 				5750492528CF6B320008F11D /* LaunchScreen.storyboard */,
+				5750494628D31EE40008F11D /* MessageCell.swift */,
+				5750494728D31EE40008F11D /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,6 +117,7 @@
 		5750493728D074800008F11D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5750494428D313310008F11D /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5750494928D31EE40008F11D /* MessageCell.xib in Resources */,
 				5750492728CF6B320008F11D /* LaunchScreen.storyboard in Resources */,
 				5750492F28D071B80008F11D /* GoogleService-Info.plist in Resources */,
 				5750492428CF6B320008F11D /* Assets.xcassets in Resources */,
@@ -190,12 +203,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5750491C28CF6B320008F11D /* WelcomeViewController.swift in Sources */,
+				5750494828D31EE40008F11D /* MessageCell.swift in Sources */,
 				5750492228CF6B320008F11D /* Tiny_Chat.xcdatamodeld in Sources */,
 				5750491828CF6B320008F11D /* AppDelegate.swift in Sources */,
+				5750494528D313310008F11D /* Message.swift in Sources */,
 				5750493F28D074D80008F11D /* ChatViewController.swift in Sources */,
 				5750493D28D074C80008F11D /* RegisterViewController.swift in Sources */,
 				5750493B28D074B30008F11D /* LogInViewController.swift in Sources */,
 				5750491A28CF6B320008F11D /* SceneDelegate.swift in Sources */,
+				5750494328D307EE0008F11D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

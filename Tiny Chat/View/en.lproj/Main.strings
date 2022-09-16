@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "142-Zg-tS2"; */
+"142-Zg-tS2.normalTitle" = "Register";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "4qp-DZ-9qB"; */
+"4qp-DZ-9qB.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "82Q-Cg-o81"; */
+"82Q-Cg-o81.placeholder" = "email";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "SNy-AU-hI0"; */
+"SNy-AU-hI0.placeholder" = "email";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "Ym7-5g-PED"; */
+"Ym7-5g-PED.normalTitle" = "Log In";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "c5Q-wJ-qpJ"; */
+"c5Q-wJ-qpJ.placeholder" = "password";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "hVJ-Vt-o6z"; */
+"hVJ-Vt-o6z.normalTitle" = "Register";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "mo9-6N-cgy"; */
+"mo9-6N-cgy.normalTitle" = "Log In";
+
+/* Class = "UILabel"; text = "🐣 Tiny Chat 🐣"; ObjectID = "oYN-11-zbD"; */
+"oYN-11-zbD.text" = "🐣 Tiny Chat 🐣";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "yNp-Zq-BnZ"; */
+"yNp-Zq-BnZ.placeholder" = "password";

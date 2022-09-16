@@ -25,7 +25,7 @@ class LogInViewController: UIViewController {
 				if let e = error {
 					print(e.localizedDescription)
 				} else {
-					self.performSegue(withIdentifier: "LogInToChat", sender: self)
+					self.performSegue(withIdentifier: K.logInSegue, sender: self)
 				}
 			}
 		}
