@@ -4,33 +4,41 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="88" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Tiny_Chat" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="459" height="88"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="95" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Tiny_Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="95"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="459" height="88"/>
+                <rect key="frame" x="0.0" y="0.0" width="459" height="95"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hps-yN-YdU">
-                        <rect key="frame" x="10" y="10" width="439" height="68"/>
+                        <rect key="frame" x="10" y="10" width="439" height="75"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="S3Y-r0-JfO">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Dg6-ld-Cp4"/>
+                                    <constraint firstAttribute="height" constant="40" id="sgx-6H-fPj"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlU-5T-6Dd">
-                                <rect key="frame" x="0.0" y="0.0" width="379" height="68"/>
+                                <rect key="frame" x="60" y="0.0" width="319" height="68"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cn-TV-7ml">
-                                        <rect key="frame" x="10" y="10" width="359" height="48"/>
+                                        <rect key="frame" x="10" y="10" width="299" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.78254346234023309" green="0.90144594506534792" blue="0.91170022035027576" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="lightBlue1"/>
                                 <constraints>
                                     <constraint firstItem="3cn-TV-7ml" firstAttribute="top" secondItem="mlU-5T-6Dd" secondAttribute="top" constant="10" id="8IL-yy-c7G"/>
                                     <constraint firstItem="3cn-TV-7ml" firstAttribute="leading" secondItem="mlU-5T-6Dd" secondAttribute="leading" constant="10" id="K2A-9A-KYw"/>
@@ -58,13 +66,18 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="3cn-TV-7ml" id="tP1-8e-1fr"/>
+                <outlet property="leftImageView" destination="S3Y-r0-JfO" id="UfU-qQ-slZ"/>
                 <outlet property="messageBubble" destination="mlU-5T-6Dd" id="p7t-0K-mC9"/>
                 <outlet property="rightImageView" destination="1hL-w3-Sjo" id="h2m-CJ-nbl"/>
             </connections>
-            <point key="canvasLocation" x="-448.55072463768118" y="308.03571428571428"/>
+            <point key="canvasLocation" x="-448.55072463768118" y="310.37946428571428"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
+        <namedColor name="lightBlue1">
+            <color red="0.78431372549019607" green="0.90196078431372551" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

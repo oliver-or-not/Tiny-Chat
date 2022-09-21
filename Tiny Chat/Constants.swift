@@ -13,16 +13,16 @@ struct K {
 	static let logInSegue = "LogInToChat"
 	
 	struct BrandColors {
-		static let purple = "BrandPurple"
-		static let lightPurple = "BrandLightPurple"
-		static let blue = "BrandBlue"
-		static let lightBlue = "BrandLightBlue"
-		
-		struct FStore {
-			static let collectionName = "messages"
-			static let senderField = "sender"
-			static let bodyField = "body"
-			static let dateField = "date"
-		}
+		static let blue = "blue1"
+		static let purple = "purple1"
+		static let lightBlue = "lightBlue1"
+		static let lightPurple = "lightPurple1"
+	}
+	
+	struct FStore {
+		static let collectionName = "messages"
+		static let senderField = "sender"
+		static let bodyField = "body"
+		static let dateField = "date"
 	}
 }
